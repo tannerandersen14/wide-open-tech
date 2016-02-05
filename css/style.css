@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,700,700italic,600|Oswald:400,700,300);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900italic);
 html , body {
    box-sizing: border-box;
@@ -10,10 +11,13 @@ body {
    padding: 0;
 }
 .main-container {
-  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 400vh;
   width: 100%;
-
 }
+
 .workshop-first {
   width: 100%;
   height: 490px;
@@ -26,7 +30,6 @@ body {
   display: none;
   width: 65%;
   height: 20px;
-  background: gray;
 }
 section {
   width: 100%;
@@ -34,26 +37,262 @@ section {
 .nav-wrapper {
   width: 100%;
   height: 75px;
-  background: #ccc;
-  z-index: 1;
-
-
+  position: relative;
+  padding-top: 25px;
 }
 .hamburger {
+  position: absolute;
+  top: 5px;
+  right: 10px;
   height: 50px;
   width: 50px;
-  background: black;
 }
-@media (min-width: 700px) {
+.wide-open-image {
+  height: 150px;
+  width: 158px;
+  position: relative;
+  bottom: 60px;
+  left: 200px;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 0px;
+  left: 450px;
+  width: 43%;
+  margin: auto;
+  color: white;
+  font-family: Lato, sans-serif;
+  padding-top: 30px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.contact{
+  border-style: groove;
+  border-width: 1px;
+  height: 40px;
+  width: 120px;
+  background-color: #b9e01f;
+  position: relative;
+  left: 10px;
+  bottom: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.white-hamburger {
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 35px;
+  z-index: 3;
+}
+.title-intro {
+  font-family: Lato;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  width: 25%;
+  height: 300px;
+
+
+}
+.how-it-works {
+  font-family: Oswald;
+  margin: auto;
+  text-align: center;
+  font-size: 45px;
+  color: #40666D;
+  position: relative;
+  bottom: 130px;
+  left: 35%;
+  display: flex;
+  flex-wrap: nowrap;
+  font-weight: 300;
+  letter-spacing: 1px;
+
+
+
+}
+.weird-green {
+  color: orange;
+}
+.orange {
+  color: #b9e01f;
+}
+.top-piece {
+  position: relative;
+  right: 220px;
+  top: 10px;
+  font-size: 24px;
+  font-weight: 300;
+}
+.main-piece {
+  font-size: 160px;
+  position: relative;
+  right: 175px;
+  bottom: 10px;
+}
+.bottom-piece {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 17px;
+
+
+}
+.button {
+  border-style: groove;
+  border-width: 1px;
+  height: 40px;
+  width: 120px;
+  background-color: #b9e01f;
+  position: relative;
+  left: 110px;
+  top: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.thesis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 425px;
+  background: #f1f2ef;
+}
+.statement {
+  color: #40666D;
+  margin: auto;
+  letter-spacing: 1px;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: Open+Sans;
+  text-align: center;
+  font-weight: 100;
+  font-size: 23px;
+  line-height: 44px;
+  position: relative;
+  bottom: 85px;
+}
+.pencil {
+  height: 50px;
+  weight: 50px;
+}
+.more-pencil {
+  display: block;
+  background: url("../img/sprite_home.png");
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-position: -22px -113px;
+  position: relative;
+  bottom: 155px;
+}
+.seperate {
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Open+Sans;
+  color: #8F8787;
+  font-weight: 800;
+}
+.lightbulb {
+  height: 400px;
+  width: 32%;
+  display: block;
+
+}
+.light-pic {
+  height: 150px;
+  weight: 150px;
+  position: relative;
+  left: 34%;
+  top: 80px;
+}
+.text2 {
+  font-family: Open+Sans;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  min-height: 300px;
+  position: relative;
+  top: 100px;
+  left: 3%;
+  text-align: center;
+}
+.service {
+  position: relative;
+  bottom: 100px;
+  left: 30%;
+  font-size: 16px;
+  color: #b9e01f;
+}
+.arrow {
+  height: 400px;
+  width: 32%;
+  border-right-style: solid;
+  border-left-style: solid;
+  border-width .5px;
+}
+.arrow-pic {
+  width: 131px;
+  height: 160px;
+  background: url("../img/sprite_home_arrow.png") no-repeat;
+}
+.power {
+  height: 400px;
+  width: 32%;
+}
+.text3 {
+  font-family: Open+Sans;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  min-height: 300px;
+  position: relative;
+  top: 60px;
+  text-align: center;
+}
+
+
+@media (min-width: 800px) {
   .hamburger {
     display: none;
   }
   .nav {
     display: block;
   }
+
 }
-@media (min-width: 900px) {
-  .nav {
+@media (max-width: 800px) {
+  .nav-bar {
     display: none;
+  }
+  .wide-open-image {
+    position: relative;
+    bottom: 60;
+    left: 0;
+  }
+  .main-piece {
+    font-size: 100px;
+  }
+}
+@media (max-width: 400px) {
+  .main-piece {
+    font-size: 60px;
   }
 }
